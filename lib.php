@@ -230,6 +230,7 @@ class local_cohortauto_handler {
         } else {
             $emailrootdomain = $emaildomain;
         }
+        $emailrootdomain = strtolower($emailrootdomain);
         $userprofiledata['email'] = array(
             'full' => $userprofiledata['email'],
             'username' => $emailusername,
